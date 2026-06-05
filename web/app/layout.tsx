@@ -8,8 +8,8 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MYPINMONEY — Free Wallpapers",
-  description: "Thousands of free HD wallpapers. Download and use on any device.",
+  title: "WallDrop — Free HD Wallpapers",
+  description: "Thousands of free HD wallpapers for desktop, phone and tablet. Browse and download for free.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Providers>
           <header className="sticky top-0 z-50 bg-[var(--bg)] border-b border-gray-200 dark:border-gray-800">
             <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
-              <a href="/" className="font-bold text-xl text-[#e60023]">MYPINMONEY</a>
+              <a href="/" className="font-bold text-xl text-[#e60023]">WallDrop</a>
               <ThemeToggle />
             </div>
           </header>

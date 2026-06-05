@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main className="max-w-7xl mx-auto px-4 py-6">
       <AdBanner size="leaderboard" adSlot={process.env.ADSENSE_SLOT_HOME ?? ""} />
-      <h1 className="text-2xl font-bold mt-6 mb-4">Free HD Wallpapers</h1>
+      <h1 className="text-2xl font-bold mt-6 mb-4">Free HD Wallpapers — Download for Any Device</h1>
       <Gallery pins={pins} />
     </main>
   );

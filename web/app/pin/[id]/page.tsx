@@ -26,7 +26,7 @@ export async function generateMetadata({
   const pin = pins.find((p) => p.id === id);
   if (!pin) return {};
   return {
-    title: `Wallpaper ${pin.id} — MYPINMONEY`,
+    title: `Free HD Wallpaper — WallDrop`,
     description: "Free HD wallpaper. Download for desktop, phone, or tablet.",
     openGraph: {
       images: [{ url: pin.cloudinary_url }],
