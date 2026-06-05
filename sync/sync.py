@@ -54,7 +54,7 @@ def run_gallery_dl() -> list[Path]:
     subprocess.run(
         [
             "gallery-dl",
-            "--archive", str(ARCHIVE_DB),
+            "--download-archive", str(ARCHIVE_DB),
             "--dest", str(TMP_DIR),
             PINTEREST_URL,
         ],
