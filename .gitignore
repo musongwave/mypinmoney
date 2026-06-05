@@ -1,0 +1,16 @@
+# Next.js
+web/.next/
+web/node_modules/
+web/.env.local
+
+# Python
+sync/__pycache__/
+sync/.pytest_cache/
+sync/.venv/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Brainstorm artifacts
+.superpowers/
