@@ -9,7 +9,7 @@ import cloudinary
 import cloudinary.uploader
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(Path(__file__).parent / ".env")
 
 PINTEREST_URL = "https://www.pinterest.com/murad980"
 ARCHIVE_DB = Path.home() / ".pinterest-archive.db"
