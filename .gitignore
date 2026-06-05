@@ -7,6 +7,8 @@ web/.env.local
 sync/__pycache__/
 sync/.pytest_cache/
 sync/.venv/
+sync/.env
+sync/.env.*
 *.pyc
 
 # macOS
