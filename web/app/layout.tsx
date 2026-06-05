@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "WallDrop — Free HD Wallpapers",
   description: "Thousands of free HD wallpapers for desktop, phone and tablet. Browse and download for free.",
+  other: {
+    "google-adsense-account": "ca-pub-3598378097598611",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
