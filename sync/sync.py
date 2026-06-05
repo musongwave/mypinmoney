@@ -11,7 +11,12 @@ from dotenv import load_dotenv
 
 load_dotenv(Path(__file__).parent / ".env")
 
-PINTEREST_URL = "https://www.pinterest.com/murad980"
+PINTEREST_SOURCES = [
+    # All boards
+    "https://www.pinterest.com/murad980",
+    # Wallpapers board
+    "https://www.pinterest.com/murad980/wallpapers/",
+]
 ARCHIVE_DB = Path.home() / ".pinterest-archive.db"
 TMP_DIR = Path("/tmp/pinterest_new")
 REPO_ROOT = Path(__file__).parent.parent
@@ -51,15 +56,16 @@ def prepend_pin(pins_json: Path, pin: dict) -> None:
 
 def run_gallery_dl() -> list[Path]:
     TMP_DIR.mkdir(parents=True, exist_ok=True)
-    subprocess.run(
-        [
-            "gallery-dl",
-            "--download-archive", str(ARCHIVE_DB),
-            "--dest", str(TMP_DIR),
-            PINTEREST_URL,
-        ],
-        check=True,
-    )
+    for url in PINTEREST_SOURCES:
+        subprocess.run(
+            [
+                "gallery-dl",
+                "--download-archive", str(ARCHIVE_DB),
+                "--dest", str(TMP_DIR),
+                url,
+            ],
+            check=True,
+        )
     extensions = ("*.jpg", "*.jpeg", "*.png", "*.webp")
     files: list[Path] = []
     for ext in extensions:
