@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.mypinmoney.sync</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/muradhajyev/Claude Works/MYPINMONEY/sync/.venv/bin/python3</string>
+    <string>/Users/muradhajyev/Claude Works/MYPINMONEY/sync/sync.py</string>
+  </array>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>3</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/muradhajyev/Claude Works/MYPINMONEY/sync/sync.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/muradhajyev/Claude Works/MYPINMONEY/sync/sync.err</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>CLOUDINARY_URL</key>
+    <string>FILL_IN_AFTER_CLOUDINARY_SETUP</string>
+  </dict>
+</dict>
+</plist>
